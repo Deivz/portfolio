@@ -1,6 +1,43 @@
 .topo{
-    background-image: url("../../assets/whitewall.png");
+    background: linear-gradient(rgba(255, 254, 254, 0.4), rgba(255, 255, 255, 0.5) 90%), url("../../assets/whitewall.png");
+    /* background-image: url("../../assets/whitewall.png"); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
+}
+
+.topo__container{
+    align-items: center;
+    /* background-color: rgba(232, 232, 232, 1); */
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem auto;
+}
+
+h1{
+    background-image: url("../../assets/dvzlogo.png");
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+}
+
+.nav__lista{
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
+    justify-content: space-around;
+    list-style: none;
+    width: 900px;
+}
+
+.secao__principal{
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: space-around;
+    margin-top: 4rem;
+    padding: 1rem auto;
+}
+
+strong{
+    color: #d42c38;
 }
