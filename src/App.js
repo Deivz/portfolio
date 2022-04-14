@@ -1,7 +1,9 @@
+import Topo from "./components/topo/Topo";
+
 function App() {
   return (
     <div>
-      Olá!
+      <Topo />
     </div>
   );
 }
