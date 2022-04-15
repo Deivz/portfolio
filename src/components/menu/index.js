@@ -17,7 +17,7 @@ function Menu(){
          <nav className={styles.nav__menu}>
             <ul className={styles.nav__lista}>
                <li className={styles.nav__item}><a href="#">Home</a></li>
-               <li className={styles.nav__item}><a href="#">Sobre</a></li>
+               <li className={styles.nav__item}><a href="#sobre">Sobre</a></li>
                <li className={styles.nav__item}><a href="#">Competências</a></li>
                <li className={styles.nav__item}><a href="#">Experiências</a></li>
                <li className={styles.nav__item}><a href="#">Portfolio</a></li>

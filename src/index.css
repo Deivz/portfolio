@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 h2, h3, p{
   padding-bottom: .5rem;
 }
@@ -25,13 +29,18 @@ span a{
   color: black;
 }
 
+
 @media (min-width: 1200px){
+  section{
+    min-height: calc(100vh - 80px);
+  }
+
   h2{
       font-size: 2.2rem;
   }
 
   h3{
-      font-size: 1.8rem;
+      font-size: 1.6rem;
   }
 
   h2, h3, p{
