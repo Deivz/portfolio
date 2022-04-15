@@ -2,60 +2,67 @@
     display: none;
 } */
 
+.menu__ativo .nav__menu {
+    right: 0;
+}
+
+.menu__ativo:after{
+    background-color: rgba(0,0,0,0.4);
+    bottom: 0;
+	content: "";
+	display: block;
+    left: 0;
+	position: fixed;
+    right: 0;
+	top: 120px;
+}
+
+.menu__abrir{
+    cursor: pointer;
+    display: inline-block;
+    right: 0;
+    z-index: 3;
+}
+
+.nav__menu{
+    background-color: #fcfbf9;
+    padding: 2em .5em;
+    height: 100%;
+	margin: 0;
+	max-width: 180px;
+    position: fixed;
+	right: -90%;
+    top: 120px;
+	transition: right 0.3s ease-out;
+	width: 90%;
+    z-index: 1;
+}
+
 .nav__lista{
     list-style: none;
 }
 
-.nav__menu{
-    background-color: #f7f0e9;
-    height: 100vh;
-    margin: 0;
-    padding: 2rem .5rem;
-    position: fixed;  
-    right: -100%;
-    top: 125px;
-    transition: right 0.3s ease-out;
-    width: 100%;
-    z-index: 100;
-  }
-  
-  .menu-ativo .nav__menu{
-  right: 0;
-  visibility: visible;
-  }
-  
-  .menu__abrir {
-    cursor: pointer;
-    display: inline-block;
-    order: 3;
-    padding-right: .5rem;
-    padding-top: .4rem;
-    right: 0;
-    z-index: 3;
-  }
-  
-  .bar1, .bar2, .bar3 {
+.bar1, .bar2, .bar3 {
     background-color: #1a0c57;
     height: 5px;
     margin: 6px 0;
     width: 35px;
     transition: 0.4s;
-  }
-  
-  
-  /* Rotacionar primeira barra*/
-  .change .bar1 {
+}
+
+/* Rotacionar primeira barra*/
+.change .bar1 {
     transform: rotate(-45deg) translate(-9px, 6px) ;
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  }
-  
-  /* Esconder segunda barra*/
-  .change .bar2 {
+}
+
+/* Esconder segunda barra*/
+.change .bar2 {
     opacity: 0;
-  }
-  
-  /* Rotacionar terceira barra*/
-  .change .bar3 {
+}
+
+/* Rotacionar terceira barra*/
+.change .bar3 {
     transform: rotate(45deg) translate(-8px, -8px) ;
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  }
+}
