@@ -25,10 +25,6 @@ span:nth-child(n+2):nth-child(-n+4){
   padding-left: 2rem;
 }
 
-span a{
-  color: black;
-}
-
 
 @media (min-width: 1200px){
   section{
@@ -49,10 +45,5 @@ span a{
 
   p{
     font-size: 1.2rem;
-}
-
-  span{
-      font-size: 1.6rem;
   }
-
 }

@@ -10,7 +10,7 @@ function Home(){
       <section className={styles.secao__home} id="home">
          <div className={styles.home__container}>
             <main className={styles.main__conteudo}>
-               <h2>Oi, eu sou <strong>Davi</strong>,</h2>
+               <div className={styles.apresentacao}><h2>Oi, eu sou <strong>Davi</strong>,</h2></div>
                <h3>e sou <strong>desenvolvedor full stack junior</strong>!</h3>
                <p>Graduado em engenharia mecânica pela UFBA, em transição de carreira, buscando a primeira oportunidade na área tech.</p>
                <div className={styles.icones}>

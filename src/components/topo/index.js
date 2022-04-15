@@ -7,7 +7,7 @@ function Topo() {
       <header>
          <div className={styles.topo__container} id="topo">
             <div className={styles.topo}>
-               <h1><img src={logo} alt="Logotipo do autor da página" className={styles.logo}></img></h1>
+               <h1><a href="#"><img src={logo} alt="Logotipo do autor da página" className={styles.logo}></img></a></h1>
                <Menu />
             </div> 
          </div>
