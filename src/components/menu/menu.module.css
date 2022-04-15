@@ -92,7 +92,13 @@
 
     .nav__lista a{
         color: black;
+        font-size: 1.2rem;
         font-weight: bold;
         text-decoration: none;
     }
+
+    .nav__lista a:hover{
+        color: red;
+    }
+
 }

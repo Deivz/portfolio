@@ -1,0 +1,51 @@
+.sobre__container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    padding: 1rem 1rem; 
+}
+
+
+@media (min-width: 800px){
+    .sobre__imagens{
+        background-image: url("../../assets/eng_codes.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 395px;
+        width: 480px;
+    }
+}
+
+
+@media (min-width: 1200px){
+    .sobre__container{
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+
+    .sobre__texto{
+        width: 54%;
+    }
+
+    .sobre__imagens{
+        background-image: url("../../assets/eng_codes_tres.png");
+        height: 580px;
+    }
+}
+
+@media (min-width: 1310px){
+    .sobre__imagens{
+        background-image: url("../../assets/eng_codes_dois.png");
+        height: 495px;
+    }
+}
+
+@media (min-width: 1510px){
+    .sobre__imagens{
+        background-image: url("../../assets/eng_codes.png");
+        height: 395px;
+    }
+}

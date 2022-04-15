@@ -8,8 +8,8 @@ function Menu(){
    }
 
    return (
-      <div className={ativo ? `${styles.menu__ativo}` : `${styles.container}`} onClick={ToggleMode}>
-         <div className={ativo ? `${styles.change} ${styles.botao__menu}` : `${styles.botao__menu}`}>
+      <div className={ativo ? `${styles.menu__ativo}` : `${styles.container}`}>
+         <div className={ativo ? `${styles.change} ${styles.botao__menu}` : `${styles.botao__menu}`} onClick={ToggleMode}>
             <div className={styles.bar1}></div>
             <div className={styles.bar2}></div>
             <div className={styles.bar3}></div>

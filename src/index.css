@@ -8,3 +8,42 @@
   margin: 0;
   padding: 0;
 }
+
+h2, h3, p{
+  padding-bottom: .5rem;
+}
+
+strong{
+  color: red;
+}
+
+span:nth-child(n+2):nth-child(-n+4){
+  padding-left: 2rem;
+}
+
+span a{
+  color: black;
+}
+
+@media (min-width: 1200px){
+  h2{
+      font-size: 2.2rem;
+  }
+
+  h3{
+      font-size: 1.8rem;
+  }
+
+  h2, h3, p{
+      padding-bottom: 1rem;
+  }
+
+  p{
+    font-size: 1.2rem;
+}
+
+  span{
+      font-size: 1.6rem;
+  }
+
+}
