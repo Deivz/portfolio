@@ -16,8 +16,8 @@ function Topo() {
          <section className={styles.secao__principal}>
             <main className={styles.main__conteudo}>
                <h2>Oi, eu sou <strong>Davi</strong>,</h2>
-               <h3>e sou desenvolvedor front-end junior!</h3>
-               <p>Sou engenheiro mecânico em transição de carreira em busca de minha primeira oportunidade.</p>
+               <h3>e sou <strong>desenvolvedor front-end junior</strong>!</h3>
+               <p>Graduado em engenharia mecânica pela UFBA, em transição de carreira, buscando a primeira oportunidade na área tech.</p>
                <div className={styles.icones}>
                   <span><a href="https://www.linkedin.com/in/carlos-davi-oliveira/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></span>
                   <span><a href="https://github.com/Deivz" target="_blank" rel="noopener noreferrer"><FaGithub /></a></span>
