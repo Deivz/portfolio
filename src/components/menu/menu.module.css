@@ -99,6 +99,14 @@
         z-index: initial;
     }
 
+    .menu__ativo .nav__menu {
+        right:unset;
+    }
+
+    .menu__ativo:after{
+        display: none;
+    }
+
     .nav__lista{
         display: flex;
         justify-content: space-around;

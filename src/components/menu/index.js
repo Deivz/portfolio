@@ -24,7 +24,7 @@ function Menu(){
          <nav className={styles.nav__menu}>
             <ul className={styles.nav__lista}>
                {links.map((link)=>{
-                  return <li className={styles.nav__item} onClick={ToggleMode}><a href={link.url} key={link.id}>{link.texto}</a></li>
+                  return <li className={styles.nav__item}><a href={link.url} key={link.id}>{link.texto}</a></li>
                })}
             </ul>
          </nav>
