@@ -10,13 +10,15 @@
     left: 0;
 	position: fixed;
     right: 0;
-	top: 120px;
+	top: 0px;
 }
 
 .botao__menu{
     cursor: pointer;
     display: inline-block;
     right: 0;
+    position: relative;
+    z-index: 3;
 }
 
 .nav__menu{
@@ -27,7 +29,7 @@
     padding: 2em .5em;
     position: fixed;
 	right: -90%;
-    top: 120px;
+    top: 0;
 	transition: right 0.3s ease-out;
 	width: 90%;
     z-index: 1;
@@ -35,6 +37,18 @@
 
 .nav__lista{
     list-style: none;
+}
+
+.nav__item{
+    border-bottom: 1px solid #1a0c57;
+    padding-top: 3rem;
+}
+
+.nav__item a{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .bar1, .bar2, .bar3 {
@@ -90,15 +104,16 @@
         justify-content: space-around;
     }
 
-    .nav__lista a{
+    .nav__item{
+        border-bottom: none;
         color: black;
         font-size: 1.2rem;
         font-weight: bold;
+        padding-top: 0;
         text-decoration: none;
     }
 
     .nav__lista a:hover{
         color: red;
     }
-
 }

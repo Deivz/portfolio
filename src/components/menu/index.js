@@ -1,10 +1,17 @@
 import { useState } from "react";
 import styles from "./menu.module.css";
+import {links} from "./links"
 
 function Menu(){
    const [ativo, setAtivo] = useState(false);
+   
    function ToggleMode(){
       setAtivo(!ativo);
+      if (!ativo){
+         document.body.style.overflow = "hidden"
+      }else{
+         document.body.style.overflow = "visible"
+      }
    }
 
    return (
@@ -16,12 +23,9 @@ function Menu(){
          </div>
          <nav className={styles.nav__menu}>
             <ul className={styles.nav__lista}>
-               <li className={styles.nav__item}><a href="#">Home</a></li>
-               <li className={styles.nav__item}><a href="#sobre">Sobre</a></li>
-               <li className={styles.nav__item}><a href="#">Competências</a></li>
-               <li className={styles.nav__item}><a href="#">Experiências</a></li>
-               <li className={styles.nav__item}><a href="#">Portfolio</a></li>
-               <li className={styles.nav__item}><a href="#">Contato</a></li>
+               {links.map((link)=>{
+                  return <li className={styles.nav__item} onClick={ToggleMode}><a href={link.url} key={link.id}>{link.texto}</a></li>
+               })}
             </ul>
          </nav>
       </div>
