@@ -1,16 +1,35 @@
 import styles from "./home.module.css";
 import fotoAutor from "../../assets/portfoto.png";
+import Menu from "../menu";
+import BotaoMenu from "../botaoMenu";
+import { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 
 function Home(){
+
+   const [ativo, setAtivo] = useState(false);
+   
+   function ToggleMode(){
+      setAtivo(!ativo);
+      // if (!ativo){
+      //    document.body.style.overflow = "hidden"
+      // }else{
+      //    document.body.style.overflow = "scroll"
+      // }
+   }
+
     return(
       <section className={styles.secao__home} id="home">
          <div className={styles.home__container}>
             <main className={styles.main__conteudo}>
-               <div className={styles.apresentacao}><h2>Oi, eu sou <strong>Davi</strong>,</h2></div>
+               <div className={styles.apresentacao}>
+                  <h2>Oi, eu sou <strong>Davi</strong>,</h2>
+                  <BotaoMenu  ativo={ativo} evento={ToggleMode}/>
+                  <Menu ativo={ativo}/>
+               </div>
                <h3>e sou <strong>desenvolvedor full stack junior</strong>!</h3>
                <p>Graduado em engenharia mecânica pela UFBA, em transição de carreira, buscando a primeira oportunidade na área tech.</p>
                <div className={styles.icones}>

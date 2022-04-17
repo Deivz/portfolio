@@ -1,47 +1,27 @@
-.menu__ativo .nav__menu {
-    right: 0;
-}
-
-.menu__ativo:after{
-    background-color: rgba(0,0,0,0.4);
-    bottom: 0;
-	content: "";
-	display: block;
-    left: 0;
-	position: fixed;
-    right: 0;
-	top: 0px;
-}
-
-.botao__menu{
-    cursor: pointer;
-    display: inline-block;
-    right: 0;
-    position: relative;
-    z-index: 3;
-}
-
 .nav__menu{
     background-color: #fcfbf9;
-    height: 100%;
-	margin: 0;
-	max-width: 180px;
-    padding: 2em .5em;
+    height: 100vh;
     position: fixed;
-	right: -90%;
+    right: -90%;
     top: 0;
-	transition: right 0.3s ease-out;
-	width: 90%;
-    z-index: 1;
+    transition: right .3s ease-out;
+    max-width: 70vw;
+    z-index: 0;
+}
+
+.menu__ativo .nav__menu{
+    right: 0;
 }
 
 .nav__lista{
     list-style: none;
+    position: relative;
+    top: 80px;
 }
 
 .nav__item{
     border-bottom: 1px solid #1a0c57;
-    padding-top: 3rem;
+    margin: 2rem 1rem 1rem 1rem;
 }
 
 .nav__item a{
@@ -49,79 +29,4 @@
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
-}
-
-.bar1, .bar2, .bar3 {
-    background-color: #1a0c57;
-    height: 5px;
-    margin: 6px 0;
-    width: 35px;
-    transition: 0.4s;
-}
-
-/* Rotacionar primeira barra*/
-.change .bar1 {
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Esconder segunda barra*/
-.change .bar2 {
-    opacity: 0;
-}
-
-/* Rotacionar terceira barra*/
-.change .bar3 {
-    transform: rotate(45deg) translate(-8px, -8px) ;
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-}
-
-@media (min-width: 1200px){   
-    .container{
-        width: 900px;
-    }
-
-    .botao__menu{
-        display: none;
-    }
-    
-    .nav__menu{
-        background-color: transparent;
-        padding: 2em .5em;
-        height: 100%;
-        margin: 0;
-        max-width: 900px;
-        position: initial;
-        right: initial;
-        top: 120px;
-        transition: none;
-        width: 100%;
-        z-index: initial;
-    }
-
-    .menu__ativo .nav__menu {
-        right:unset;
-    }
-
-    .menu__ativo:after{
-        display: none;
-    }
-
-    .nav__lista{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .nav__item{
-        border-bottom: none;
-        color: black;
-        font-size: 1.2rem;
-        font-weight: bold;
-        padding-top: 0;
-        text-decoration: none;
-    }
-
-    .nav__lista a:hover{
-        color: red;
-    }
 }

@@ -25,16 +25,12 @@
     max-width: 100vw;
 }
 
-.apresentacao{
-    padding-bottom: 1rem;
-}
-
 .apresentacao h2, h2 strong{
     font-family: 'Bebas Neue', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Permanent Marker', cursive;
     font-size: 2rem;
-    transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
 }
 
 .foto{
@@ -69,7 +65,12 @@
 }
 
 @media (min-width: 1200px){
+    .apresentacao{
+        padding-bottom: 1rem;
+    }
+    
     .apresentacao h2, h2 strong{
         font-size: 5rem;
+        -webkit-transform: rotate(-4deg);
     }
 }

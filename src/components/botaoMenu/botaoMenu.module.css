@@ -1,0 +1,28 @@
+.botao__menu{
+    position: fixed;
+    right: 1rem;
+    top: 20px;
+    z-index: 1;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: #1a0c57;
+    height: 5px;
+    margin: 6px 0;
+    width: 35px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px) ;
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+}
