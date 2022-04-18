@@ -26,3 +26,9 @@
     transform: rotate(45deg) translate(-8px, -8px) ;
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
 }
+
+@media (min-width: 1200px){
+    .botao__menu{
+        display: none;
+    }
+}

@@ -21,7 +21,7 @@ function App() {
   return (
     <div>
       <Topo acao={ativaCor}/>
-      <div><Home /></div>
+      <Home />
       <Sobre />
     </div>
   );

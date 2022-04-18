@@ -1,17 +1,6 @@
 import styles from "./botaoMenu.module.css"
 
 function BotaoMenu({evento, ativo}){
-   // const [ativo, setAtivo] = useState(false);
-   
-   // function ToggleMode(){
-   //    setAtivo(!ativo);
-   //    // if (!ativo){
-   //    //    document.body.style.overflow = "hidden"
-   //    // }else{
-   //    //    document.body.style.overflow = "scroll"
-   //    // }
-   // }
-
    return(
       <div className={ativo ? `${styles.botao__menu} ${styles.change}` : `${styles.botao__menu}`} onClick={evento}>
          <div className={styles.bar1}></div>
