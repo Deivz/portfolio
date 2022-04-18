@@ -1,6 +1,8 @@
-.container{
-    position: absolute;
-    right: 0;
+.navegacao{
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -37,32 +39,38 @@
 }
 
 
-@media (min-width: 1200px){
+@media (min-width: 1200px){    
+    .navegacao{
+        height: 80px;
+    }
+    
     .container{
         align-items: center;
         display: flex;
-        justify-content: flex-end;
         height: 80px;
+        margin: 0 auto;
+        max-width: 1500px;
+        width: 96%;
     }
-
+    
     .nav__menu{
-        align-items: flex-end;
+        align-items: center;
         background-color: transparent;
         display: flex;
-        height: unset;
+        height: 80px;
+        justify-content: flex-end;
         max-width: unset;
         padding-top: unset;
-        position: fixed;
+        position: unset;
         right: unset;
-        transition: unset;
-        width: 76%;
+        transition: none;
+        width: 100%;
     }
 
     .nav__lista{
         display: flex;
         justify-content: space-around;
-        margin: 0 auto;
-        width: 900px;
+        width: 70%;
     }
     
     .nav__item{
