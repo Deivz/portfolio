@@ -11,7 +11,7 @@ export const links = [{
 {
     id: 3,
     texto: "Competencias",
-    url: "#"
+    url: "#competencias"
 },
 {
     id: 4,

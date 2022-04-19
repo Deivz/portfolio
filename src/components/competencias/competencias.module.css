@@ -1,0 +1,40 @@
+.competencias{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.container{
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    padding-top: 1rem;
+    width: 96%;
+}
+
+.titulo{
+    width: 100%;
+}
+
+.experiencia{
+    padding-right: 1rem;
+    width: 50%;
+}
+
+.habilidades{
+    padding-left: 1rem;
+    width: 50%;
+}
+
+.item{
+    padding: .5rem 0;
+}
+
+@media (min-width: 1200px){
+    .titulo{
+        text-align: center;
+    }
+}

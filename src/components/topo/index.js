@@ -1,7 +1,7 @@
 import styles from "./topo.module.css";
 import logo from "../../assets/dvzlogo.png"
 
-function Topo({acao}) {
+export default function Topo({acao}) {
 
    return (
       <header className={acao ? `${styles.topo__colorido}` : ``}>
@@ -13,5 +13,3 @@ function Topo({acao}) {
       </header>
    )
 }
-
-export default Topo

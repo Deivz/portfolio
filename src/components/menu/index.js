@@ -1,7 +1,7 @@
 import styles from "./menu.module.css";
 import {links} from "./links"
 
-function Menu({ativo}){
+export default function Menu({ativo}){
    return (
       <div className={styles.navegacao}>
          <div className={ativo ? `${styles.container} ${styles.menu__ativo}` : `${styles.container}`}>
@@ -16,5 +16,3 @@ function Menu({ativo}){
       </div>
    )
 }
-
-export default Menu

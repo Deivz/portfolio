@@ -1,6 +1,6 @@
 import styles from "./botaoMenu.module.css"
 
-function BotaoMenu({evento, ativo}){
+export default function BotaoMenu({evento, ativo}){
    return(
       <section className={styles.menu}>
          <div className={styles.botao__menu}>
@@ -13,5 +13,3 @@ function BotaoMenu({evento, ativo}){
       </section>
    )
 }
-
-export default BotaoMenu

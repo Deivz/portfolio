@@ -9,7 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import Topo from "../topo";
 
-function Home(){
+export default function Home(){
 
    const [ativaCor, setAtivaCor] = useState(false);
 
@@ -59,5 +59,3 @@ function Home(){
       </section>
     )
 }
-
-export default Home

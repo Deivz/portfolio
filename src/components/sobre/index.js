@@ -1,12 +1,12 @@
 import styles from "./sobre.module.css"
 import {FaTools} from "react-icons/fa";
 
-function Sobre(){
+export default function Sobre(){
     return(
       <section className={styles.secao__sobre} id="sobre">
         <div className={styles.sobre__container}>
           <div className={styles.sobre__texto}>
-              <h2><FaTools /> Um pouco sobre mim</h2>
+              <h2><FaTools style={{paddingBottom: 6}}/> Um pouco sobre mim</h2>
               <h3><span></span>Engenheiro mecânico {"&"} desenvolvedor full stack</h3>
               <p>Audodidata, polímata e apaixonado por tecnologia e em descobrir como elas funcionam, desde criança desmontava coisas pra entender como eram feitas.
                   Aos 12 anos tive acesso ao meu primeiro computador, e um mundo novo então se abriu. Aos 14 anos comecei a criar páginas na web
@@ -23,5 +23,3 @@ function Sobre(){
       </section>
     )
 }
-
-export default Sobre
