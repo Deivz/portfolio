@@ -11,11 +11,11 @@
     display: flex;
     justify-content: space-between;
     max-width: 1500px;
-    padding-top: 1rem;
     width: 96%;
 }
 
 .titulo{
+    text-align: center;
     width: 100%;
 }
 
@@ -34,7 +34,5 @@
 }
 
 @media (min-width: 1200px){
-    .titulo{
-        text-align: center;
-    }
+    
 }

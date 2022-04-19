@@ -1,7 +1,7 @@
 header{
     align-items: center;
     display: flex;
-    height: 80px;
+    justify-content: center;
     left: 0;
     position: fixed;
     top: 0;
@@ -12,7 +12,8 @@ header{
 .topo__container{
     align-items: center;
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
+    margin: .5rem 0;
     max-width: 1500px;
     width: 96%;
 }
@@ -23,7 +24,14 @@ header{
     box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
+.container__logo{
+    align-items: center;
+    display: flex;
+}
+
 .logo{
+    align-items: center;
+    display: flex;
     height: 60px;
     width: 60px;
 }

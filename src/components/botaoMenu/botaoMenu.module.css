@@ -1,21 +1,5 @@
-.menu{
-    align-items: center;
-    display: flex;
-    height: 80px;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 3;
-}
-
 .botao__menu{
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 auto;
-    max-width: 1500px;
-    width: 96%;
+   z-index: 3;
 }
 
 .bar1, .bar2, .bar3 {
@@ -41,7 +25,7 @@
 }
 
 @media (min-width: 1200px){
-    .menu{
+    .botao__menu{
         display: none;
     }
 }

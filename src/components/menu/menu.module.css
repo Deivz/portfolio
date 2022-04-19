@@ -1,12 +1,3 @@
-.navegacao{
-    align-items: center;
-    display: flex;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 .menu__ativo .nav__menu{
     right: 0;
 }
@@ -14,15 +5,15 @@
 .nav__menu{
     background-color: #fcfbf9;
     height: 100vh;
-    max-width: 60vw;
-    padding-top: 80px;
-    position: fixed;
+    position: absolute;
     right: -90%;
-    transition: ease-in-out .3s;
+    top: 0;
+    transition: ease-in-out .2s;
 }
 
 .nav__lista{
     list-style: none;
+    padding-top: 4rem;
 }
 
 .nav__item{
@@ -38,6 +29,31 @@
     text-decoration: none;
 }
 
+@media (min-width: 1200px){
+    .nav__menu{
+        align-items: center;
+        background-color: transparent;
+        display: flex;
+        height: 80px;
+        position: unset;
+        right: unset;
+        top: unset;
+        transition: none;
+    }
+
+    .nav__lista{
+        display: flex;
+        padding-top: 0;
+    }
+
+    .nav__item{
+        border-bottom: none;
+        margin: 0 2.5rem;
+        padding-top: 0;
+    }
+}
+
+/* 
 
 @media (min-width: 1200px){    
     .navegacao{
@@ -80,4 +96,4 @@
         padding-top: unset;
     }
     
-}
+} */

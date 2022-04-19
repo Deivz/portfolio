@@ -1,11 +1,11 @@
 import styles from "./competencias.module.css"
 import { Progress } from "reactstrap"
-import {FaCheckCircle, FaUserGraduate} from "react-icons/fa"
+import {FaCheckCircle, FaTools} from "react-icons/fa"
 
 export default function Competencias() {
   return (
     <section className={styles.competencias} id="competencias">
-      <h2 className={styles.titulo}><FaUserGraduate style={{paddingBottom: 6}}/>Habilidades e Competências</h2>
+      <h2 className={styles.titulo}><FaTools style={{paddingBottom: 6}}/>Habilidades e Competências</h2>
       <div className={styles.container}>
         <div className={styles.experiencia}>
           <p><FaCheckCircle style={{paddingBottom: 2, color:'red'}}/>Desenvolvimento de sites com acessibilidade e responsividade utilizando Bootstrap, CSS3 e HTML5;</p>
