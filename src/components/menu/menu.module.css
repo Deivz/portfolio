@@ -1,4 +1,5 @@
 .menu__ativo .nav__menu{
+    overflow: scroll;
     right: 0;
 }
 
@@ -53,8 +54,6 @@
     }
 }
 
-/* 
-
 @media (min-width: 1200px){    
     .navegacao{
         height: 80px;
@@ -95,5 +94,9 @@
         margin: unset;
         padding-top: unset;
     }
+
+    .nav__item a:hover{
+        color: red;
+    }
     
-} */
+}

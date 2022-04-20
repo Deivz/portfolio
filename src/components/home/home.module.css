@@ -14,90 +14,98 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 90vh;
     justify-content: space-between;
     max-width: 1500px;
     width: 96%;
 }
 
 .main__conteudo{
+    margin: 1rem auto;
     max-width: 90vw;
-}
-
-.apresentacao h2, .apresentacao h3{
-    padding-bottom: .5rem;
-}
-  
-.apresentacao p{
-    padding-bottom: .5rem;
-}
-  
-span:nth-child(n+2):nth-child(-n+4){
-    padding-left: 2rem;
 }
 
 .apresentacao h2, h2 strong{
     font-family: 'Bebas Neue', cursive;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Permanent Marker', cursive;
-    font-size: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     -webkit-transform: rotate(-4deg);
 }
 
-.foto{
-    max-height: 68vh;
-    max-width: 68vw;
+h3, p{
+    padding-bottom: .5rem;
 }
 
-.icones{
-    padding-top: .5rem;
+span:nth-child(n+2):nth-child(-n+4){
+    padding-left: 2rem;
 }
 
 .icones a{
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.foto{
+    max-height: 76vh;
+    max-width: 76vw;
 }
 
 
-@media (min-width: 550px){
-    .foto{
-        max-height: 65vh;
-        max-width: 65vw;
-    }
-}
-
-@media (min-width: 800px){
+/* Mobile em posição horizontal */
+@media (min-width: 600px) and (min-height: 250px){
     .home__container{
+        align-items: center;
         flex-direction: row;
-        align-items: flex-end;
+        justify-content: space-between;
     }
 
     .main__conteudo{
-        margin: auto 0;
-    }
-
-    .apresentacao h2, h2 strong{
-        font-size: 3rem;
-    }
-
-    .foto{
-        max-height: 85vh;
-        max-width: 85vw;
+        max-width: 70vw;
     }
 }
 
-@media (min-width: 1200px){
-    .apresentacao{
-        padding-bottom: 1rem;
-    }
-    
-    .apresentacao h2, h2 strong{
-        font-size: 5rem;
-        -webkit-transform: rotate(-4deg);
+
+/* Mobile em posição vertical */
+@media (min-width: 360px) and (min-height: 800px){
+    .main__conteudo{
+        height: 30vh;
+        max-width: 70vw;
     }
 
-    .apresentacao h2, .apresentacao h3, .apresentacao p{
-        padding-bottom: 1rem;
+    .foto{
+        max-height: 80vh;
+        max-width: 80vw;
+    }
+}
+
+@media (min-width: 360px) and (min-height: 600px){
+    .foto{
+        max-height: 70vh;
+        max-width: 70vw;
+    }
+}
+
+
+/* Tablets e afins */
+@media (min-width: 750px) and (min-height: 1000px){
+    .home__container{
+        flex-direction: column;
+    }
+
+    .main__conteudo{
+        height: 20vh;
+        max-width: 70vw;
+    }
+
+    .foto{
+        max-height: 70vh;
+        max-width: 70vw;
+    }
+}
+
+@media (min-width: 1000px){
+    .apresentacao h2, h2 strong{
+        font-size: 3.2rem;
+        padding-bottom: 2rem;
     }
 }

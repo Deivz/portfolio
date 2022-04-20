@@ -1,7 +1,6 @@
 .competencias{
     align-items: flex-end;
     background-color: rgba(53, 188, 250, 0.2);
-    background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -12,9 +11,9 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 80vh;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1500px;
+    padding-top: 1rem;
     width: 96%;
 }
 
@@ -36,33 +35,43 @@
     padding-bottom: 1rem;
 }
 
-@media (min-width: 800px){
+
+/* Tablets e afins */
+@media (min-width: 750px) and (min-height: 1000px){
+    .container{
+        height: 80vh;
+        justify-content: space-around;
+    }
+}
+
+
+@media (min-width: 1000px){
     .container{
         align-items: flex-start;
         flex-direction: row;
-        height: 80vh;
+        height: 60vh;
+        justify-content: space-around;
     }
 
     .experiencia{
-        width: 40%;
+        width: 45%;
     }
 
     .habilidades{
-        width: 50%;
+        width: 45%;
     }
 }
+
 
 @media (min-width: 1200px){
     .container{
         height: 70vh;
     }
+}
 
-    .experiencia{
-        width: 50%;
-        padding-right: 1rem;
-    }
 
-    .habilidades{
-        padding-left: 1rem;
+@media (min-width: 1500px){
+    .container{
+        height: 75vh;
     }
 }

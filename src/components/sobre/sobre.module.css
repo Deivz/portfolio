@@ -6,18 +6,18 @@
     width: 100%;
 }
 
-.titulo{
-    margin-top: 80px;
-}
-
 .sobre__container{
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 80vh;
     justify-content: space-between;
     max-width: 1500px;
+    padding-top: 1rem;
     width: 96%;
+}
+
+.titulo{
+    margin-top: 80px;
 }
 
 .sobre__texto{
@@ -38,16 +38,18 @@ h3 span{
     width: 26px;
 }
 
-@media (min-width: 800px){
+/* Tablets e afins */
+@media (min-width: 750px) and (min-height: 1000px){
     .sobre__container{
+        height: 80vh;
         justify-content: space-around;
     }
 
     .sobre__imagem{
         background-image: url("../../assets/eng_codes.png");
         background-repeat: no-repeat;
-        height: 200px;
-        width: 760px;
+        height: 40vh;
+        width: 740px;
     }
 
     .sobre__texto h3{
@@ -55,12 +57,34 @@ h3 span{
     }
 }
 
+@media (min-width: 1000px){
+    .sobre__imagem{
+        background-image: url("../../assets/eng_codes.png");
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 740px;
+    }
+
+    .sobre__texto h3{
+        text-align: left;
+    }
+}
+
+
 @media (min-width: 1200px){
+    .sobre{
+        align-items: flex-end;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
     .sobre__container{
         align-items: flex-start;
         flex-direction: row-reverse;
         height: 70vh;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .sobre__imagem{
@@ -71,7 +95,21 @@ h3 span{
     }
 
     .sobre__texto{
-        margin-left: 1rem;
-        width: 60%;
+        width: 65%;
+    }
+}
+
+@media (min-width: 1500px){
+    .sobre{
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .sobre__container{
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        height: 75vh;
+        justify-content: space-between;
     }
 }
