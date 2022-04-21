@@ -1,6 +1,7 @@
 import React from "react"
 import { Chrono } from "react-chrono";
 import experiencias from "./experiencias"
+import experienciasSemTitulo from "./experienciasSemTitulo"
 import styles from "./experiencias.module.css"
 import {FaHammer} from "react-icons/fa"
 import { useState, useEffect } from 'react';
@@ -25,17 +26,46 @@ export default function Experiencias() {
         return matches;
     }
 
-    const isDesktop = useMediaQuery('(min-width: 1200px)');
+    const isPhone = useMediaQuery('(max-width: 650px)');
+    const isPhoneHor = useMediaQuery('(max-width: 1000px)');
+    const isDesktop = useMediaQuery('(min-width: 1100px)');
+    
 
     return (
         <section className={styles.experiencia} id="experiencias">
             <h2 className={styles.titulo}><FaHammer style={{paddingBottom: 9}}/>Experiência Profissional</h2>
             <div className={styles.container}>
-            {isDesktop ? <div style={{ width: "96%", height: "70vh", marginLeft: "auto", marginRight: "auto"}}>
-                    <Chrono items={experiencias} mode="VERTICAL_ALTERNATING" allowDynamicUpdate={true} cardHeight={200} cardWidth={600} itemWidth={150}/>
-                </div> : <div style={{ width: "100%", height: "65vh"}}>
-                    <Chrono items={experiencias} mode="VERTICAL" allowDynamicUpdate={true} cardHeight={200} cardWidth={600} itemWidth={650} lineWidth={1} />
-                </div>}
+                {isPhone ?
+                <div className={styles.timeline}>
+                    <Chrono items={experienciasSemTitulo} mode="VERTICAL" disableAutoScrollOnClick={true} cardHeight={100} cardWidth={600} lineWidth={1} theme={{
+                        primary: "black",
+                        secondary: "lightblue",
+                        cardBgColor: "white",
+                        cardForeColor: "black",
+                        titleColor: "black"
+                    }}/>
+                </div>
+                : isPhoneHor ?
+                <div className={styles.timeline}>
+                    <Chrono items={experiencias} mode="VERTICAL" disableAutoScrollOnClick={true} cardHeight={100} cardWidth={600} lineWidth={1} theme={{
+                        primary: "black",
+                        secondary: "lightblue",
+                        cardBgColor: "white",
+                        cardForeColor: "black",
+                        titleColor: "black"
+                    }}/>
+                </div>
+                : isDesktop ?
+                <div className={styles.timeline}>
+                    <Chrono items={experiencias} mode="VERTICAL_ALTERNATING" enableOutline allowDynamicUpdate={true} cardHeight={200} cardWidth={600} theme={{
+                        primary: "black",
+                        secondary: "lightblue",
+                        cardBgColor: "white",
+                        cardForeColor: "black",
+                        titleColor: "black"
+                    }}/>
+                </div>
+                :``}
             </div>
         </section>
         

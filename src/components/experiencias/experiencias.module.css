@@ -3,6 +3,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 360vh;
   width: 100%;
 }
 
@@ -16,12 +19,72 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 auto;
   max-width: 1500px;
   width: 96%;
+  z-index: 0;
 }
 
-@media (min-width: 1200px){
+.timeline{
+  height: 65vh;
+  width: 100%;
+}
+
+
+/* Mobile em posição horizontal */
+@media (min-width: 600px) and (min-height: 250px){
+  .experiencia{
+    top: 495vh;
+  }
+  .timeline{
+    height: 70vh;
+  }
+}
+
+
+@media (min-width: 600px) and (min-height: 350px){
+  .experiencia{
+    top: 390vh;
+  }
+}
+
+
+/* Mobile em posição vertical */
+@media (min-width: 360px) and (min-height: 600px){
+  .experiencia{
+    top: 315vh;
+  }
+
+  .timeline{
+    height: 70vh;
+  }
+}
+
+
+/* Tablets e afins */
+@media (min-width: 750px) and (min-height: 1000px){
+  .titulo{
+    padding-top: 0rem;
+  }
+  .timeline{
+    height: 75vh;
+  }
+}
+
+
+@media (min-width: 1000px){
+  .experiencia{
+    top: 300vh;
+  }
+
   .container{
     width: 100%;
+  }
+
+  .titulo{
+    padding-top: 0rem;
+  }
+  .timeline{
+    height: 75vh;
   }
 }

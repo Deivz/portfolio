@@ -1,11 +1,9 @@
 import styles from "./home.module.css";
 import fotoAutor from "../../assets/portfoto.png";
-
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import Topo from "../topo";
 
 export default function Home(){
     return(
@@ -14,7 +12,6 @@ export default function Home(){
             <main className={styles.main__conteudo}>
                <div className={styles.apresentacao}>
                   <h2>Oi, eu sou <strong>Davi</strong>,</h2>
-                  <Topo />
                </div>
                <h3>e sou <strong>desenvolvedor full stack junior</strong>!</h3>
                <p>Graduado em engenharia mecânica pela UFBA, em transição de carreira, buscando a primeira oportunidade na área tech.</p>
