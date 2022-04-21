@@ -32,7 +32,7 @@ export default function Topo() {
    }
 
    return (
-      <header className={ativaCor ? `${styles.topo__colorido}` : ``}>
+      <header className={ativaCor ? `${styles.topo__colorido} ${styles.header}` : `${styles.header}`}>
          <div className={ativo ? `${styles.topo__container} ${cssAtivo.menu__ativo}` : `${styles.topo__container}`} id="topo">
             <div className={styles.container__logo}>
                <h1><a href="#"><img src={logo} alt="Logotipo do autor da página" className={styles.logo}></img></a></h1>
