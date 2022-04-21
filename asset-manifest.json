@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ea4f0e9d.css",
-    "main.js": "/portfolio/static/js/main.8bdf7b23.js",
+    "main.css": "/portfolio/static/css/main.bd22c7eb.css",
+    "main.js": "/portfolio/static/js/main.1afb7ccb.js",
     "static/media/portfoto.png": "/portfolio/static/media/portfoto.92643f42820ead36f28a.png",
     "static/media/fundo.jpg": "/portfolio/static/media/fundo.6b139a5cfff42e2d17c3.jpg",
     "static/media/eng_codes.png": "/portfolio/static/media/eng_codes.9d16d50f6a677a2d15ad.png",
     "static/media/eng_codes_dois.png": "/portfolio/static/media/eng_codes_dois.bf31d233373782a9649e.png",
     "static/media/dvzlogo.png": "/portfolio/static/media/dvzlogo.7649067d2301cb082938.png",
     "index.html": "/portfolio/index.html",
-    "main.ea4f0e9d.css.map": "/portfolio/static/css/main.ea4f0e9d.css.map",
-    "main.8bdf7b23.js.map": "/portfolio/static/js/main.8bdf7b23.js.map"
+    "main.bd22c7eb.css.map": "/portfolio/static/css/main.bd22c7eb.css.map",
+    "main.1afb7ccb.js.map": "/portfolio/static/js/main.1afb7ccb.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea4f0e9d.css",
-    "static/js/main.8bdf7b23.js"
+    "static/css/main.bd22c7eb.css",
+    "static/js/main.1afb7ccb.js"
   ]
 }
