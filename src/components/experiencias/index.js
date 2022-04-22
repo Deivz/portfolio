@@ -28,7 +28,6 @@ export default function Experiencias() {
 
     const isPhone = useMediaQuery('(max-width: 650px)');
     const isPhoneHor = useMediaQuery('(max-width: 1000px)');
-    const isDesktop = useMediaQuery('(min-width: 1100px)');
     
 
     return (
@@ -55,7 +54,7 @@ export default function Experiencias() {
                         titleColor: "black"
                     }}/>
                 </div>
-                : isDesktop ?
+                :
                 <div className={styles.timeline}>
                     <Chrono items={experiencias} mode="VERTICAL_ALTERNATING" enableOutline allowDynamicUpdate={true} cardHeight={200} cardWidth={600} theme={{
                         primary: "black",
@@ -64,8 +63,7 @@ export default function Experiencias() {
                         cardForeColor: "black",
                         titleColor: "black"
                     }}/>
-                </div>
-                :``}
+                </div>}
             </div>
         </section>
         

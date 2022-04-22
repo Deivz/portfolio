@@ -26,5 +26,5 @@ export const links = [{
 {
     id: 6,
     texto: "Contato",
-    url: "#"
+    url: "#contato"
 }];
