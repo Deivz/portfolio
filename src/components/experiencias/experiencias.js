@@ -16,7 +16,7 @@ const items = [
         "Designer / Desenvolvedor front-end",
       cardDetailedText: `Projetar e desenvolver designs para sites utilizando pacote Adobe CS6 (FireWorks e PhotoShop );
       Desenvolver layouts animados e hotsites utilizando o Adobe Flash CS6 e programação em ActionScript;
-      Desenvolver páginas web utilizando CSS, JavaScript e XHTML (utilizando DreamWeaver);
+      Desenvolver páginas web utilizando CMS (Joomla), CSS, JavaScript e XHTML (utilizando DreamWeaver);
       Estruturar pequenos bancos de dados para sistemas de login e implementá-los utilizando PHP e MySQL.`
     },
     {
@@ -71,8 +71,9 @@ const items = [
       cardTitle: "Freelancer",
       cardSubtitle: `Designer / Desenvolvedor fullstack`,
       cardDetailedText: `Projetar e desenvolver designs para páginas web utilizando Figma e PhotoShop;
-      Desenvolver sites acessíveis e responsivos utilizando Bootstrap, CSS3, HTML5, JavaScript e TypeScript;
-      Projetar, desenvolver e validar SPAs utilizando React.JS/React.TS; Projetar, desenvolver e validar APIs/sistemas web utilizando PHP e Node.JS.`
+      Desenvolver sites acessíveis e responsivos utilizando Bootstrap, CSS3, HTML5, JavaScript, TypeScript e WordPress;
+      Projetar, desenvolver e validar páginas web utilizando React.JS/React.TS;
+      Projetar, desenvolver e validar APIs/sistemas web utilizando PHP e Node.JS.`
     }
   ];
   

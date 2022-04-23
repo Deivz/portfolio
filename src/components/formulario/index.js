@@ -7,7 +7,7 @@ export default function Formulario() {
   return(
     <section className={styles.secao__formulario} id="contato">
       <h2 className={styles.titulo}><FaEnvelope style={{paddingBottom: 6}}/>Contate-me</h2>
-      <form name="form" className={styles.form} id="form" action="" method="POST">
+      <form name="form" className={styles.form} id="form" action="../.././email.php" method="POST">
         <Form inline>
         <FormGroup floating>
             <Input id="nome" name="nome" placeholder="Nome" type="text" />
