@@ -16,7 +16,16 @@
 
 .form{
     margin: 4rem auto;
-    max-width: 70%;
+    max-width: 600px;
+    width: 70%;
+}
+
+.box{
+    margin: 1rem 0;
+}
+
+.campo{
+    width: 100%;
 }
 
 /* Mobile em posição horizontal */
