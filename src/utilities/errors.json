@@ -1,0 +1,24 @@
+{
+    "nome": {
+        "required": "O campo nome não pode estar vazio.",
+        "min": "O nome deve possuir no mínimo 2 caracteres.",
+        "max": "O nome deve possuir no máximo 50 caracteres.",
+        "matches": "O campo nome não pode possuir números ou operadores."
+        
+    },
+    "assunto":{
+        "required": "O campo assunto não pode estar vazio.",
+        "min": "O assunto deve possuir no mínimo 2 caracteres.",
+        "max": "O assunto deve possuir no máximo 50 caracteres."
+    },
+    "email":{
+        "required": "O campo e-mail não pode estar vazio.",
+        "email": "O e-mail digitado não é válido",
+        "max": "O e-mail deve possuir no máximo 50 caracteres."
+    },
+    "mensagem":{
+        "required": "O campo mensagem não pode estar vazio.",
+        "min": "O mensagem deve possuir no mínimo 2 caracteres.",
+        "max": "O mensagem deve possuir no máximo 200 caracteres."
+    }
+}

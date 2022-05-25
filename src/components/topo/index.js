@@ -24,11 +24,6 @@ export default function Topo() {
    
    function ToggleMode(){
       setAtivo(!ativo);
-      // if (!ativo){
-      //    document.body.style.overflow = "hidden"
-      // }else{
-      //    document.body.style.overflow = "scroll"
-      // }
    }
 
    return (
