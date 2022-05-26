@@ -19,7 +19,7 @@ export default function Formulario() {
       mensagem: yup.string().min(2).max(200).required()
    }).required();
 
-  const { register, handleSubmit, formState:{errors} } = useForm({
+  const { register, handleSubmit, reset, formState:{errors} } = useForm({
     resolver: yupResolver(validacao),
   });
 
@@ -27,13 +27,14 @@ export default function Formulario() {
 		axios.post("https://pacific-atoll-83565.herokuapp.com/", data)
 		.then(()=>{
 			alert("E-mail enviado com sucesso! Obrigado pelo seu contato.");
+         reset();
 		})
 		.catch((err)=>{
 				if(err.code === "ERR_NETWORK"){
 					alert(`Sem acesso ao banco!`)
 					return
 				}
-				alert("E-mail enviado com sucesso! Obrigado pelo seu contato.");
+				alert("E-mail enviado com sucesso! Obrigado pelo seu contato!!!");
 		})
   }
 
