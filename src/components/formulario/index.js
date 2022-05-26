@@ -8,6 +8,7 @@ import { Box, Button, TextField } from "@mui/material";
 import mensagensErro from "../../utilities/errors.json";
 import SendIcon from '@mui/icons-material/Send';
 import regExNome from "../../utilities/regexValidation.js"
+import axios from "axios";
 
 export default function Formulario() {
 
@@ -22,8 +23,18 @@ export default function Formulario() {
     resolver: yupResolver(validacao),
   });
 
-  function enviar(dados){
-     console.log(dados);
+  function enviar(data){
+		axios.post("http://localhost:5000/email", data)
+		.then(()=>{
+				console.log("E-mail enviado com sucesso!!");
+		})
+		.catch((err)=>{
+				if(err.code === "ERR_NETWORK"){
+					alert(`Sem acesso ao banco!`)
+					return
+				}
+				console.log(`Dados: ${data}`)
+		})
   }
 
   return(
