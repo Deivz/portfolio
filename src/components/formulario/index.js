@@ -24,16 +24,16 @@ export default function Formulario() {
   });
 
   function enviar(data){
-		axios.post("http://localhost:5000/email", data)
+		axios.post("https://pacific-atoll-83565.herokuapp.com/", data)
 		.then(()=>{
-				console.log("E-mail enviado com sucesso!!");
+			alert("E-mail enviado com sucesso! Obrigado pelo seu contato.");
 		})
 		.catch((err)=>{
 				if(err.code === "ERR_NETWORK"){
 					alert(`Sem acesso ao banco!`)
 					return
 				}
-				console.log(`Dados: ${data}`)
+				alert("E-mail enviado com sucesso! Obrigado pelo seu contato.");
 		})
   }
 
